@@ -3,6 +3,8 @@
 
 for i in range(25, -1, -1):
     if i % 2 == 0:
-        print(chr(65 + i), end="")
+        letter = chr(65 + i)
+        print("{}".format(letter), end="")
     else:
-        print(chr(65 + i).lower(), end="")
+        letter = chr(65 + i).lower()
+        print("{}".format(letter), end="")
