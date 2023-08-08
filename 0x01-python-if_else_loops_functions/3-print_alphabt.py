@@ -1,5 +1,5 @@
-#program that prints the ASCII alphabet, in lowercase
-#Print all the letters except q and e
+# program that prints the ASCII alphabet, in lowercase
+# Print all the letters except q and e
 
 alphabets = ""
 for letter in range(97, 123):
