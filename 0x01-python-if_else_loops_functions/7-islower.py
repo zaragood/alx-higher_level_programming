@@ -1,4 +1,4 @@
-#!/urs/bin/python3
+#!/usr/bin/python3
 # function that checks for lowercase character
 
 def islower(c):
