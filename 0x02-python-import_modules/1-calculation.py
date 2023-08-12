@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
-    """program that imports functions from the file calculator_1.py
+    """program that imports functions from the file and
     does some Math
     """
     a = 10
