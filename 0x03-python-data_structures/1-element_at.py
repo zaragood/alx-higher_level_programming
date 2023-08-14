@@ -2,8 +2,7 @@
 
 # Function that retrieves an element from a list
 def element_at(my_list, idx):
-    list_len = len(my_list)
-    if (idx < 0) or (idx > list_len - 1):
+    if (idx < 0) or (idx > len(my_list)):
         return (None)
     else:
         return(my_list[idx])
