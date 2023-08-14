@@ -5,6 +5,10 @@
 def print_matrix_integer(matrix=[[]]):
     if type(matrix) == list:    
         for row in matrix:
+            separator = ""
             for item in row:
-                print("{:d}".format(item), end=" ")
+                if separator:
+                    print(separator, end="")
+                print("{:d}".format(item), end="")
+                separator = " "
             print()
