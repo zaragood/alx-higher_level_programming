@@ -4,7 +4,7 @@ def multiple_returns(sentence):
     tuple_list = []
 
     if sentence is None:
-        return(None)
+        return(len(sentence), None)
     else:
         length = len(sentence)
         tuple_list.append(length)
