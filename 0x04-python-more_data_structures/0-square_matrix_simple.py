@@ -1,4 +1,4 @@
-#!/usr/bn/python3
+#!/usr/bin/python3
 
 # function that computes the square value of all integers of a matrix.
 
