@@ -8,7 +8,7 @@ def matrix_divided(matrix, div):
 
         Args:
             @matrix (int): matrix must be a list of lists of integers or floats
-            @div (int): div must be a number 
+            @div (int): div must be a number
 
         Return:
             Returns a new matrix
