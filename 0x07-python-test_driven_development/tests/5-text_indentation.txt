@@ -5,6 +5,16 @@ hello Bob, whats your name?
 <BLANKLINE>
 I love your shoe
 
+>>> text_indentation("hello Bob, whats your name: I love your shoe")
+hello Bob, whats your name:
+<BLANKLINE>
+I love your shoe
+
+>>> text_indentation("hello Bob, whats your name? I love your shoe")
+hello Bob, whats your name?
+<BLANKLINE>
+I love your shoe
+
 >>> text_indentation(4)
 Traceback (most recent call last):
 TypeError: text must be a string
