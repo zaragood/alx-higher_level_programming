@@ -28,4 +28,3 @@ def matrix_divided(matrix, div):
             if not isinstance(item, (int, float)):
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     return list(map(lambda x: list(map(lambda y: round(y / div, 2), x)), matrix.copy()))
-
