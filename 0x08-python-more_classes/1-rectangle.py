@@ -12,8 +12,8 @@ class Rectangle:
             @width (int): width of rectangle
             @Height (int): height of the rectangle
         """
-        self.__width = width
         self.__height = height
+        self.__width = width
 
     @property
     def width(self):
@@ -30,10 +30,11 @@ class Rectangle:
         self.__width = value
 
     @property
-    def heigth(self):
+    def height(self):
         """getting the private instance attribute height"""
         return (self.__height)
 
+    @height.setter
     def height(self, value):
         """sets the attribute of height to value"""
         if not isinstance(value, int):
@@ -41,3 +42,4 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
