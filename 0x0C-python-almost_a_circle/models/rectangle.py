@@ -50,7 +50,7 @@ class Rectangle(Base):
         """getting the private instance attribute x"""
         return (self.__x)
 
-    @height.setter
+    @x.setter
     def x(self, x):
         """sets the attribute of x"""
         self.__x = x
