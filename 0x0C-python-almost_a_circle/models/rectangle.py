@@ -88,10 +88,15 @@ class Rectangle(Base):
     def display(self):
         """prints in stdout the Rectangle instance with the character #"""
 
+        for _ in range(self.__y):
+            print()
         for i in range(self.area()):
-            if i and (i % self.width) == 0:
+            if i and not (i % self.__width):
                 print()
-            print("#", end='')
+            if not (i % self.__width):
+                for j in range(self.__x):
+                    print(' ', end='')
+            print('#', end='')
         print()
 
     def __str__(self):
