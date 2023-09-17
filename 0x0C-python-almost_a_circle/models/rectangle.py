@@ -93,3 +93,12 @@ class Rectangle(Base):
                 print()
             print("#", end='')
         print()
+
+    def __str__(self):
+        """method so that it returns a formated string"""
+        a = str(self.id)
+        b = str(self.__x)
+        c = str(self.__y)
+        d = str(self.__width)
+        e = str(self.__height)
+        return "[Rectangle]" + "(" + a + ")" + " " + b + "/" + c + " " + "-" + " " + d + "/" + e
