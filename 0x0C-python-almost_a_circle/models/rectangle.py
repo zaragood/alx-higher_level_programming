@@ -75,9 +75,9 @@ class Rectangle(Base):
     @y.setter
     def y(self, y):
         """sets the attribute of y"""
-        if not isinstance(y, int):
+        if type(y) != int:
             raise TypeError("y must be an integer")
-        if y < 0:
+        elif y < 0:
             raise ValueError("y must be >= 0")
         self.__y = y
 
@@ -91,7 +91,7 @@ class Rectangle(Base):
         for _ in range(self.__y):
             print()
         for i in range(self.area()):
-            if i and not (i % self.__width):
+            if not (i % self.__width) and i != 0:
                 print()
             if not (i % self.__width):
                 for j in range(self.__x):
@@ -120,3 +120,13 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 if key in arguments:
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        """returns the dictionary representation of Rect"""
+        return {
+                "x": self.__x,
+                "y": self.__y,
+                "id": self.id,
+                "height": self.__height,
+                "width": self.__width
+                }
