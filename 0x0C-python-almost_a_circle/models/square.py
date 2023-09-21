@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+""" This module creates a class: Rectangle"""
 from models.rectangle import Rectangle
-"""creating a class Square"""
 
 
 class Square(Rectangle):
