@@ -106,7 +106,8 @@ class Rectangle(Base):
         c = str(self.__y)
         d = str(self.__width)
         e = str(self.__height)
-        return "[Rectangle] " + "(" + a + ")" + " " + b + "/" + c + " " + "-" + " " + d + "/" + e
+        r = "[Rectangle]"
+        return r + "(" + a + ") " + b + '/' + c + ' - ' + d + '/' + e
 
     def update(self, *args, **kwargs):
         """assigns an argument to each attribute"""
