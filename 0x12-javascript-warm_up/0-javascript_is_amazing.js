@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 
 // script that prints “JavaScript is amazing”:
 
