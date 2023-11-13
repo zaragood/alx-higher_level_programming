@@ -5,9 +5,8 @@
 const [, , myNumber] = process.argv;
 
 if (typeof myNumber === 'string' && !isNaN(myNumber)) {
-  const number = Number(myNumber)
+  const number = Number(myNumber);
   console.log('My number: ' + number);
-
 } else {
   console.log('Not a Number');
 }
