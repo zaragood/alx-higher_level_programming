@@ -7,7 +7,7 @@ let i = 0;
 
 if (typeof x === 'string' && !isNaN(x)) {
   const number = Number(x);
-  while (x > i) {
+  while (number > i) {
     console.log('C is fun');
     i++;
   }
