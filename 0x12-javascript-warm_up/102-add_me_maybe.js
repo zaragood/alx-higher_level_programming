@@ -1,7 +1,7 @@
 #!/usr/bin/node
 // function that increments and calls a function.
 
-let = addMeMaybe = function (number, theFunction) {
+const addMeMaybe = function (number, theFunction) {
   number++;
   theFunction(number);
 };
