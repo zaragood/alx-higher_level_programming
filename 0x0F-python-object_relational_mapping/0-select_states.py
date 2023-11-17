@@ -5,10 +5,10 @@ import MySQLdb
 
 if __name__ == "__main__":
     """make a connection to the database hbtn_0e_0_usa"""
-    mysql_connection = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
+    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
 
     """creat a cursor object"""
-    cur = mysql_connection.cursor()
+    cur = db.cursor()
 
     """execute the SELECT query"""
     cur.execute("SELECT * FROM states ORDER BY states.id ASC")
