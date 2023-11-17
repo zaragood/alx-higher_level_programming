@@ -11,7 +11,9 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     """execute the SELECT query"""
-    query = "SELECT * FROM states WHERE name = '{}'".format(sys.argv[4])
+    query = "SELECT * FROM states WHERE BINARY name = '{}'".format(
+        sys.argv[4]
+    )
     cur.execute(query)
     states = cur.fetchall()
 
