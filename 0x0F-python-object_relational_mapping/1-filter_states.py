@@ -11,13 +11,13 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     """execute the SELECT query"""
-    query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC"
+    query = "SELECT * FROM states WHERE BINARY name LIKE 'N%'"
     cur.execute(query)
     states = cur.fetchall()
 
     """list all states from the  table"""
     for state in states:
         print(state)
-    
+
     cur.close()
     db.close()
