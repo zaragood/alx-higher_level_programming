@@ -29,6 +29,6 @@ if __name__ == "__main__":
         # Print the State objects in the format specified
         print(f'{state.id}: {state.name}')
     else:
-        print('')
+        print('Nothing')
 
     session.close()
