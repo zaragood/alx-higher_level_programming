@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// Display the status code of a GET request
+// script that gets the contents of a webpage and stores it in a file.
 
 const request = require('request');
 const fs = require('fs');
